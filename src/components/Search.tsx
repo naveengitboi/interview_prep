@@ -42,7 +42,6 @@ const Search = () => {
     const handler = (e) => {
       if (e.ctrlKey && e.key == '/') {
         inputRef?.current.focus();
-        console.log(inputRef?.current)
       }
     }
 
