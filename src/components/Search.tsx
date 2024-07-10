@@ -9,7 +9,6 @@ const makeBolder = (x: string) => {
   )
 }
 const matchChars = (item: string, search: string) => {
-  const ans = '';
   const final = []
   let i = 0;
   let j = 0;
@@ -55,7 +54,7 @@ const Search = () => {
 
   return (
     <div className="searchContainer">
-      <input type='text' onChange={(e) => setSearch(e.target.value)} ref={inputRef} />
+      <input type='text' placeholder="press ctrl + / to start typing" onChange={(e) => setSearch(e.target.value)} ref={inputRef} />
       {
         filteredItems.map((item, idx) => {
           return (
